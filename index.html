@@ -1,344 +1,524 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Minjune Hwang</title>
-  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PWVPJ95H');</script>
+  <!-- End Google Tag Manager -->
+
   <meta name="author" content="Minjune Hwang">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>Minjune Hwang. Personal Webpage</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+
+  <!-- Gif toggles -->
+  <script>
+    function gif_start(image, gif) {
+      document.getElementById(image).style.opacity = "1";
+      document.getElementById(gif).style.opacity = "0";
+    }
+    function gif_stop(image, gif) {
+      document.getElementById(image).style.opacity = "0";
+      document.getElementById(gif).style.opacity = "1";
+    }
+  </script>
+  <!-- Selected publications toggle -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type=" text/javascript">
+    function pubs_off_start() {
+      $('.hidden').hide();
+      var e = document.getElementById('sel_pub_button');
+      e.classList.add("toggled");
+      var e = document.getElementById('all_pub_button');
+      e.classList.remove("toggled");
+    }
+    function pubs_off() {
+      $('.hidden').slideUp();
+      var e = document.getElementById('sel_pub_button');
+      e.classList.add("toggled");
+      var e = document.getElementById('all_pub_button');
+      e.classList.remove("toggled");
+    }
+    function pubs_on() {
+      $('.hidden').slideDown();
+      var e = document.getElementById('all_pub_button');
+      e.classList.add("toggled");
+      var e = document.getElementById('sel_pub_button');
+      e.classList.remove("toggled");
+    };
+    window.onload = function () {
+      pubs_on();
+    };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Minjune Hwang</name>
-              <p>
-                I am an incoming CS PhD student at the University of Southern California, where I will be working with <a href="https://danielseita.github.io/">Prof. Daniel Seita</a>. Before moving to LA, I am currently spending time in Korea as a visiting scholar in <a href="https://youngwoon.github.io/">Prof. Youngwoon Lee</a>'s lab at Yonsei.
-              </p><p>
-                I received a MS degree in Computer Science at Stanford University, where I worked on robot learning research with <a href="https://profiles.stanford.edu/fei-fei-li">Prof. Fei-Fei Li</a> and <a href="https://profiles.stanford.edu/fei-fei-li">Prof. Jiajun Wu</a> in the <a href="https://svl.stanford.edu/">Stanford Vision Lab</a>. 
-                Prior to that, I completed my undergraduate studies in Computer Science and Statistics from UC Berkeley. 
-                <!-- Previously, I completed my undergraduate studies in Computer Science and Statistics from UC Berkeley, where I've done research in computer vision and convex optimization with <a href="https://bayen.berkeley.edu/">Prof. Alexandre Bayen</a> and <a href="https://people.eecs.berkeley.edu/~elghaoui/">Prof. Laurent El Ghaoui</a>. 
-                I have spent time in <a href="http://people.eecs.berkeley.edu/~daw/">Prof. David Wagner</a>'s group as well, working on adversarial machine learning  -->
-              </p><p>
-                I was also fortunate to tackle exciting research problems in <a href="https://amazon.jobs/en/teams/amazon-robotics/">Amazon Robotics</a>, <a href="https://www.microsoft.com/en-us/ai/autonomous-systems-project-bonsai">Microsoft Research</a>, and <a href="https://apple.com/">Apple</a>, where I developed novel algorithms and practical systems to solve various problems in robotics.
-              </p>
+  <!-- Dark mode -->
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+  <script>
+    var options = {
+      autoMatchOsTheme: false // default: true
+    }
 
-              <p style="text-align:center">
-                <a href="mailto:mjhwang@stanford.edu">Email</a> &nbsp/&nbsp
-                <a href="data/Minjune_Hwang_Resume_2023.pdf">Resume</a> &nbsp/&nbsp
-                <a href="https://github.com/mj-hwang/">GitHub</a> &nbsp/&nbsp
-				        <a href="https://www.linkedin.com/in/minjune-hwang-751999138/">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=juBEoEUAAAAJ&hl=en&oi=ao">Google Scholar</a> 
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/miso.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/miso-modified.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <heading>Research</heading><table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-                <p> 
-                  The goal of my research is to develop systems and learning algorithms for efficient robot manipulation, from various modalities of perception and human feedback. 
-                  As of now, I am particularly interested in <u>finding effective representations for learning challenging manipulation skills</u>.
-                </p><p>
-                  Specifically, my research focuses on methods for:
-                  <ul>
-                    <li>Leveraging multimodal perception for challenging manipulation problems. </li>
-                    <li>Learning policies and modeling reward from human demonstrations [<a href="https://behavior.stanford.edu/">1</a>] and feedback [<a href="https://arxiv.org/abs/2307.15801">2</a>] for robot manipulation.</li>
-                    <li>Using symbolic [<a href="https://arxiv.org/abs/2306.13760">1</a>] and hierarchical [<a href="https://arxiv.org/abs/2307.15801">2</a>, <a href="https://sites.google.com/view/noir-corl2023">3</a>] representations to tackle long-horizon robotic tasks.</li>
-                  </ul>
-                </p>
-              <p>
-            </p></td>
-          </tr>
-        </tbody></table>
-        
-        
-        <heading>Publications &amp; Preprints (<span style="background-color:#F3EEB5">Highlighted Papers</span>) </heading><table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-          <tr bgcolor="#F3EEB5">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/noir.jpeg' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>NOIR: Neural Signal Operated Intelligent Robots for Everyday Activities</papertitle>
-              <br>
-                Ruohan Zhang*, 
-                Sharon Lee*, 
-                <strong><u>Minjune Hwang</u>*</strong>, 
-                Ayano Hiranaka*, 
-                Chen Wang,
-                Wensi Ai, 
-                Jin Jie Ryan Tan,
-                Shreya Gupta, 
-                Yilun Hao, 
-                Gabrael Levine, 
-                Ruohan Gao, 
-                Anthony Norcia, 
-                Li Fei-Fei, 
-                Jiajun Wu,
-              <br>
-              <em>Conference on Robot Learning (<strong>CoRL</strong>)</em>, 2023
-              <br>
-              <em><a href="https://yantianzha.github.io/crl.github.io/">Cognitive Science & Robot Learning Workshop</a> @ <strong>CoRL</strong></em>, 2023
-              <br>
-                <a href="https://openreview.net/forum?id=eyykI3UIHa">paper</a> / 
-                <a href="https://noir-corl.github.io/">project page</a>
-              <br>
-            <small>(*: equal contribution)</small>
-            <p></p>
-            </td>
-          </tr>
-
-          <tr bgcolor="#F3EEB5">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/seed.gif' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Primitive Skill-Based Robot Learning from Human Evaluative Feedback</papertitle>
-              <br>
-                Ayano Hiranaka*, 
-                <strong><u>Minjune Hwang</u>*</strong>, 
-                Sharon Lee, 
-                Chen Wang, 
-                Li Fei-Fei, 
-                Jiajun Wu, 
-                Ruohan Zhang, 
-              <br>
-              <em>International Conference on Intelligent Robots and Systems (<strong>IROS</strong>)</em>, 2023
-              <br>
-                <a href="https://arxiv.org/abs/2307.15801">arXiv</a> / 
-                <a href="https://seediros23.github.io/">project page</a> / 
-                <a href="data/SEED_poster_updated.pdf">poster</a>
-              <br>
-            <small>(*: equal contribution, alphabetically ordered)</small>
-            <p></p>
-            </td>
-          </tr>
-
-          <tr bgcolor="#F3EEB5">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/hron.png' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Task-Driven Graph Attention for Hierarchical Relational Object Navigation</papertitle>
-              <br>
-                Michael Lingelbach, 
-                Chengshu Li, 
-                <strong><u>Minjune Hwang</u></strong>, 
-                Andrey Kurenkov, 
-                Alan Lou, 
-                Roberto Martín-Martín, 
-                Ruohan Zhang, 
-                Li Fei-Fei, 
-                Jiajun Wu, 
-              <br>
-              <em>International Conference on Robotics and Automation (<strong>ICRA</strong>)</em>, 2023
-              <br>
-                <a href="https://arxiv.org/abs/2306.13760">arXiv</a> /
-                <a href="https://github.com/mjlbach/ssg">github</a>
-              <br>
-            <p></p>
-            </td>
-          </tr>
-
-          <tr bgcolor="#F3EEB5">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/behavior.gif' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>BEHAVIOR-1K: A Benchmark for Embodied AI with 1,000 Everyday Activities and Realistic Simulation</papertitle>
-                <br>
-                  Chengshu Li, 
-                  Cem Gokmen, 
-                  Gabrael Levine, 
-                  Roberto Martín-Martín, 
-                  Sanjana Srivastava, 
-                  Chen Wang, 
-                  Josiah Wong, 
-                  Ruohan Zhang,
-                  Michael Lingelbach, 
-                  Jiankai Sun, 
-                  Mona Anvari, 
-                  <strong><u>Minjune Hwang</u></strong>,
-                  Manasi Sharma, 
-                  Arman Aydin, 
-                  Dhruva Bansal, 
-                  Samuel Hunter, 
-                  Kyu-Young Kim, 
-                  Alan Lou, 
-                  Caleb R Matthews, 
-                  Ivan Villa-Renteria, 
-                  Jerry Huayang Tang, 
-                  Claire Tang, 
-                  Fei Xia, 
-                  Silvio Savarese, 
-                  Hyowon Gweon, 
-                  Karen Liu, 
-                  Jiajun Wu, 
-                  Li Fei-Fei, 
-                <br>
-                <em>Conference on Robot Learning (<strong>CoRL</strong>)</em>, 2022</font> <font color="red"><strong>(Best Paper Nominee)</strong></font>
-                <br>
-                  <a href="https://openreview.net/pdf?id=_8DoIe8G3t">paper</a> /
-                  <a href="https://behavior.stanford.edu/">project page</a>
-                <br>
-              <p></p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/tracking.gif' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Decentralized Vehicle Coordination: The Berkeley DeepDrive Drone Dataset</papertitle>
-                <br>
-                  Fangyu Wu,
-                  Dequan Wang,
-                  <strong><u>Minjune Hwang</u></strong>,
-                  Chenhui Hao,
-                  Jiawei Lu,
-                  Jiamu Zhang,
-                  Christopher Chou,
-                  Trevor Darrell,
-                  Alexandre Bayen,
-                <br>
-                Arxiv Preprint, 2022
-                <br>
-                  <a href="https://arxiv.org/abs/2209.08763">arXiv</a> /
-                  <a href="https://github.com/b3d-project/b3d">project (github) page</a>
-                <br>
-              <p></p>
-            </td>
-          </tr>
-
-          <tr bgcolor="#F3EEB5">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/minority_edit.png' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Minority Reports Defense: Defending Against Adversarial Patches</papertitle>
-                <br>
-                  Michael McCoyd, 
-                  Won Park, 
-                  Steven Chen, 
-                  Neil Shah, 
-                  Ryan Roggenkemper, 
-                  <strong><u>Minjune Hwang</u></strong>,
-                  Jason Xinyu Liu, 
-                  David Wagner,
-                <br>
-                <em>Security in Machine Learning and its Applications (<a href="https://simla-workshop.github.io/Simla2023/">SiMLA</a>), 2020 <font color="red"><strong>(Best Paper Award)</strong></font>
-                <br>
-                  <a href="https://arxiv.org/abs/2004.13799">arXiv</a> /
-                  <a href="https://github.com/mmccoyd/areadefense">github</a>
-                <br>
-              <p></p>
-            </td>
-          </tr>
-    
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/motionplanning.png' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Motion Planning in Understructured Road Environments with Stacked Reservation Grids</papertitle>
-                <br>
-                Fangyu Wu,
-                Dequan Wang,
-                <strong><u>Minjune Hwang</u></strong>,
-                Chenhui Hao,
-                Jiawei Lu,
-                Trevor Darrell,
-                Alexandre Bayen,
-                <br>
-                <em><a href="https://mit-spark.github.io/PAL-ICRA2020/">PAL</a> @ <strong>ICRA</strong></em>, 2020
-                <br>
-                <a href="data/20pal.pdf">paper</a>
-                <br>
-              <p></p>
-            </td>
-          </tr>
-    
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/aihadr1.png' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Text Analytics for Resilience-Enabled Extreme Events Reconnaissance</papertitle>
-              <br>
-                Alicia Yi-Ting Tsai*,
-                Selim Günay*,
-                <strong><u>Minjune Hwang</u>*</strong>,
-                Chenglong Li*,
-                Pengyuan Zhai*,
-                Laurent El Ghaoui,
-                Khalid M.Mosalam,
-              <br>
-              <em><a href=https://www.hadr.ai/home>AI + HADR</a> @ <strong>NeurIPS</strong>, 2020 
-              <br>
-                <a href="https://arxiv.org/abs/2011.13087">arXiv</a> /
-                <a href="https://peer.berkeley.edu/news/peer-research-project-highlight-text-analytics-social-media-resilience-enabled-extreme-events">project page</a> /
-                <a href="https://github.com/alicia-tsai/TAR-toolkits">github</a>
-              <br>
-              <small>(*: equal contribution)</small>
-              <p></p>
-            </td>
-          </tr>
-
-
-        </tbody></table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Teaching</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <ul>
-          <li><strong>Graduate Teaching Assistant</strong>: <a href="http://cs231n.stanford.edu/">Stanford CS 231N</a> [2023], Deep Learning for Computer Vision </li>
-          <li><strong>Reader</strong> (Undergraduate Teaching Assistant): <a href="https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/">UC Berkeley EE 227BT</a> [2020], Convex Optimization </li>
-          <li><strong>Course Instructor</strong>: Ecole Bilingue de Berkeley [2019], Robotics & Programming  (with Prof. Alex Bayen) </li>
-          <li><strong>Undergraduate Lab Assistant</strong>: <a href="https://inst.eecs.berkeley.edu/~cs61a/sp18/">UC Berkeley CS 61A</a> [2018],  Structure and Interpretation of Computer Programs </li>
-        </ul>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Industry Experience</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <ul>
-          <li><strong>Applied Scientist Intern</strong>, <a href="https://amazon.jobs/en/teams/amazon-robotics/">Amazon Robotics</a></li>
-          <li><strong>Research Intern</strong>, <a href="https://www.microsoft.com/en-us/ai/autonomous-systems-project-bonsai">Microsoft</a></li>
-          <li><strong>Software Engineering Intern (Motion & Trajectory Planning)</strong>, <a href="https://apple.com/">Apple</a> (SPG)</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody></table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr>
-      <td style="padding:0px">
-        <br>
-        <p style="text-align:right;font-size:small;">
-          Website template from <a href="https://jonbarron.info/">Jon Barron</a>.
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+  </script>
+  <a name="top"></a>
+  <!-- body -->
+  <div style="max-width:900; width:100%; margin:0 auto">
+    <!-- Intro & photo -->
+    <div class="table-like" style="width:100%; text-align:left;">
+      <div style="flex: 1 0 300px;margin-right:50px">
+        <p align="center">
+          <name>Minjune Hwang</name>
         </p>
+        <p align="center" style="font-family:'Courier New">
+          minjuneh at usc dot edu
+        </p>
+        <p>
+          <p>
+          Hello! I am a first year PhD Student at USC, where I am advised by <a href="https://danielseita.github.io/" target="_blank" rel="noopener">Prof. Daniel Seita</a> and closely working with <a href="https://ebiyik.github.io/" target="_blank" rel="noopener">Prof. Erdem Biyik</a>. 
+          </p>
+          <p>
+          I received a MSCS degree at Stanford, where I worked on robot learning research with <a href="https://profiles.stanford.edu/fei-fei-li"  target="_blank" rel="noopener">Prof. Fei-Fei Li</a> and <a href="https://jiajunwu.com/" target="_blank" rel="noopener">Prof. Jiajun Wu</a>.
+          Prior to that I completed my undergraduate studies at UC Berkeley, majoring in CS & Statistics. 
+          </p>
+          <p>
+            Previously, I was an Applied Scientist Intern at <a href="https://amazon.jobs/content/en/teams/ftr/amazon-robotics">Amazon Robotics</a>'s Scanless Tech, where I developed an efficient algorithm that eliminates the need for explicit scanning, with <a href="https://www.frank.preiswerk.com/" target="_blank" rel="noopener">Dr. Frank Preiswerk</a> and Preethi Krishnaswamy.
+            I have also interned in <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> and <a href="https://apple.com/">Apple</a> (SPG) to solve various problems in robotics.
+          </p>
+        </p>
+        <p align="center">
+          <!-- <a href="mailto:minjuneh@usc.edu">Email</a> &nbsp/&nbsp -->
+          <a href="data/Minjune_Hwang_CV.pdf">Resume</a> /
+          <a href="https://github.com/mj-hwang/">GitHub</a> /
+          <a href="https://www.linkedin.com/in/minjune-hwang-751999138/">LinkedIn</a> /
+          <a href="https://scholar.google.com/citations?user=juBEoEUAAAAJ&hl=en&oi=ao">Google Scholar</a> 
+        </p>
+      </div>
+      
+      <td style="padding:2.5%;width:40%;max-width:40%"></td>
+      <div class="image-cropper" style="margin-top:65px;">
+        <img src="images/mj_fuji.png" style="width:100%">
+      </div>
       </td>
-    </tr>
-  </tbody></table>
+    </div>
 
-</body></html>
+    <!--<script>
+      // Get the modal
+      var modal = document.getElementById('popup-img');
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = "images/Wechat.jpeg";
+        // modalImg.alt = this.alt;
+        // captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script> -->
+
+    <a name="re"></a>
+    <div style="width:100%; text-align:left; margin-top:20; ">
+      <heading>Research</heading>
+      <a style="font-size: 17px; color: black;">(</a><a href="javascript:pubs_on()" id="all_pub_button" style="font-size:17px">All</a>
+      <a style="font-size: 17px; color: black;"> / </a>
+      <a href="javascript:pubs_off()" id="sel_pub_button" style="font-size:17px">Highlighted</a><a style="font-size: 17px; color: black;">)</a>
+      <br>
+      (* indicates equal contribution, <sup><span>&#8224;</span></sup> indicates equal advising)
+      <p>
+      </p>
+      I am interested in developing robotic systems that can learn from human feedback and interact with humans.
+      Specifically, my research focuses on desiging algorithms that can robustly and effectively reflect users' <emph>true</emph> preference and finetuning large pretrained policies with various kinds of human feedback to continuously adapt to their needs.
+    </div>
+
+    <div style="width:100%; text-align:left; margin-top:10;">
+      <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- ReCouPLe -->
+        <tr bgcolor="#F3EEB5" class="selected">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/recouple.png' width="160">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://hitl-robot-learning.github.io/pdfs/causally.pdf">
+            <papertitle>Causally Robust Preference Learning with Reasons</papertitle>
+            </a>
+            <br>
+            <strong><u>Minjune Hwang</u></strong>, 
+            Yigit Korkmaz,
+            <a class="black_link" href="https://danielseita.github.io/" target="_blank" rel="noopener">Daniel Seita<sup><span>&#8224;</span></sup></a>,
+            <a class="black_link" href="https://ebiyik.github.io/" target="_blank" rel="noopener"></a>Erdem Biyik<sup><span>&#8224;</span></sup></a>
+            <br>
+            <em><a href="https://hitl-robot-learning.github.io/">HiTL Workshop</a> @ <strong>RSS 2025</strong> <font color="red"><strong>(Oral)</strong></font></em>
+            <br>
+            <a href="https://hitl-robot-learning.github.io/pdfs/causally.pdf">paper</a> | 
+            <a href="data/posters/ReCouPLe_poster.pdf">poster</a>
+            <p></p>
+            <p>
+            PbRL is widely used for shaping agent behavior to match a user's preference, yet its sparse binary feedback makes it vulnerable to causal confusion.
+            We introduce ReCouPLe, a lightweight framework that uses natural language rationales to clarify true causal signals behind preference and to improve generalization, by employing orthogonal decomposition.
+            </p>
+          </td>
+        </tr>
+
+        <!-- B3D -->
+        <tr class="hidden">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/tracking.gif' width="160">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2209.08763">
+            <papertitle>Decentralized Vehicle Coordination: The Berkeley DeepDrive Drone Dataset and Consensus-Based Models</papertitle>
+            </a>
+            <br>
+            Fangyu Wu,
+            Dequan Wang,
+            <strong><u>Minjune Hwang</u></strong>,
+            Chenhui Hao,
+            Jiawei Lu,
+            Jiamu Zhang,
+            Christopher Chou,
+            <a class="black_link" href="https://ebiyik.github.io/" target="_blank" rel="noopener">Trevor Darrell</a>,
+            <a class="black_link" href="https://ebiyik.github.io/" target="_blank" rel="noopener">Alexandre Bayen</a>
+            <br>
+            <em><strong>ICRA 2025</strong></em>
+            <br>
+            <em><a href="https://mit-spark.github.io/PAL-ICRA2020/">PAL Workshop</a> @ <strong>ICRA 2020</strong> <font color="red"><strong>(Oral)</strong></font></em>
+            <br>
+            <a href="https://arxiv.org/abs/2209.08763">arXiv</a> | 
+            <a href="https://github.com/b3d-project/b3d">code</a>
+            <p></p>
+            <p>
+            We introduce a novel traffic dataset and modeling framework tailored to study motion planning in understructured environments. 
+            In this project, I was in charge of the object detection and tracking framework for constructing the dataset.
+            </p>
+          </td>
+        </tr>
+        
+        <!-- NOIR -->
+        <tr bgcolor="#F3EEB5" class="selected">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/noir.gif' width="160">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://noir-corl.github.io/">
+            <papertitle>NOIR: Neural Signal Operated Intelligent Robots for Everyday Activities</papertitle>
+            </a>
+            <br>
+            <a class="black_link" href="https://ai.stanford.edu/~zharu/" target="_blank" rel="noopener">Ruohan Zhang*</a>, 
+            Sharon Lee*, 
+            <strong><u>Minjune Hwang</u>*</strong>, 
+            <a class="black_link" href="https://misoshiruseijin.github.io/" target="_blank" rel="noopener">Ayano Hiranaka*</a>, 
+            <a class="black_link" href="https://www.chenwangjeremy.net/" target="_blank" rel="noopener">Chen Wang</a>,
+            Wensi Ai, 
+            Jin Jie Ryan Tan,
+            Shreya Gupta, 
+            Yilun Hao, 
+            Gabrael Levine, 
+            Ruohan Gao, 
+            Anthony Norcia, 
+            <a class="black_link" href="https://profiles.stanford.edu/fei-fei-li" target="_blank" rel="noopener">Li Fei-Fei</a>, 
+            <a class="black_link" href="https://jiajunwu.com/" target="_blank" rel="noopener">Jiajun Wu</a>
+            <br>
+            <em><strong>CoRL 2023</strong></em> 
+            <br>
+            <em><a href="https://yantianzha.github.io/crl.github.io/">CRL Workshop</a> @ <strong>CoRL 2023</strong> <font color="red"><strong>(Oral)</strong></font></em>
+            <br>
+            <a href="https://openreview.net/forum?id=eyykI3UIHa">paper</a> | 
+            <a href="https://noir-corl.github.io/">project page</a>
+            <p></p>
+            <p>
+            NOIR is a general-purpose BRI system that enables humans to command robots to perform everyday activities with their brain signals. 
+            Here, I designed a hierarchical EEG decoding system with parameterized skills, as well as a few-shot imitation learning algorithm.
+            </p>
+          </td>
+        </tr>
+
+        <!-- SEED -->
+        <tr bgcolor="#F3EEB5" class="selected">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/seed.gif' width="160">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://seediros23.github.io/">
+            <papertitle>Primitive Skill-Based Robot Learning from Human Evaluative Feedback</papertitle>
+            </a>
+            <br>
+            <strong><u>Minjune Hwang</u>*</strong>, 
+            <a class="black_link" href="https://misoshiruseijin.github.io/" target="_blank" rel="noopener">Ayano Hiranaka*</a>, 
+            Sharon Lee, 
+            <a class="black_link" href="https://www.chenwangjeremy.net/" target="_blank" rel="noopener">Chen Wang</a>, 
+            <a class="black_link" href="https://profiles.stanford.edu/fei-fei-li" target="_blank" rel="noopener">Li Fei-Fei</a>, 
+            <a class="black_link" href="https://jiajunwu.com/" target="_blank" rel="noopener">Jiajun Wu</a>, 
+            <a class="black_link" href="https://ai.stanford.edu/~zharu/" target="_blank" rel="noopener">Ruohan Zhang</a> 
+            <br>
+            <em><strong>IROS 2023</strong></em> 
+            <br>
+            <a href="https://arxiv.org/abs/2307.15801">arXiv</a> | 
+            <a href="https://seediros23.github.io/">project page</a> |
+            <a href="data/posters/SEED_poster.pdf">poster</a>
+            <p></p>
+            <p>
+            SEED is an RLHF algorithm that leverages primitive skills to enable more safe and sample efficient long-horizon task learning. 
+            I mainly designed the hierarchical RLHF algorithm and led simulation experiments.
+            </p>
+          </td>
+        </tr>
+
+        <!-- HRON -->
+        <tr class="hidden">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/hron.png' width="160">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2306.13760">
+            <papertitle>Task-Driven Graph Attention for Hierarchical Relational Object Navigation</papertitle>
+            </a>
+            <br>
+            <a class="black_link" href="https://mlingelbach.com/" target="_blank" rel="noopener">Michael Lingelbach</a>, 
+            <a class="black_link" href="https://www.chengshuli.me/" target="_blank" rel="noopener">Chengshu Li</a>, 
+            <strong><u>Minjune Hwang</u></strong>, 
+            Andrey Kurenkov, 
+            Alan Lou, 
+            <a class="black_link" href="https://robertomartinmartin.com/" target="_blank" rel="noopener">Roberto Martin-Martin</a>, 
+            <a class="black_link" href="https://ai.stanford.edu/~zharu/" target="_blank" rel="noopener">Ruohan Zhang</a>, 
+            <a class="black_link" href="https://profiles.stanford.edu/fei-fei-li" target="_blank" rel="noopener">Li Fei-Fei</a>, 
+            <a class="black_link" href="https://jiajunwu.com/" target="_blank" rel="noopener">Jiajun Wu</a> 
+            <br>
+            <em><strong>ICRA 2023</strong></em> 
+            <br>
+            <a href="https://arxiv.org/abs/2306.13760">arXiv</a> | 
+            <a href="https://github.com/mjlbach/ssg">github</a>
+            <p></p>
+            <p>
+            We propose a novel solution to object navigation tasks based on a scene graph representation, that combines graph neural networks and task-driven attention for better scalability and learning efficiency. 
+            I empirically designed the task-driven graph attention and verified its efficacy in simulation environments.
+            </p>
+          </td>
+        </tr>
+
+        <!-- B1K -->
+        <tr bgcolor="#F3EEB5" class="selected">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/behavior.gif' width="160">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://behavior.stanford.edu/">
+            <papertitle>BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation</papertitle>
+            </a>
+            <br>
+            <a class="black_link" href="https://www.chengshuli.me/" target="_blank" rel="noopener">Chengshu Li</a>, 
+            Cem Gokmen, 
+            Gabrael Levine, 
+            <a class="black_link" href="https://robertomartinmartin.com/" target="_blank" rel="noopener">Roberto Martin-Martin</a>, 
+            Sanjana Srivastava, 
+            <a class="black_link" href="https://www.chenwangjeremy.net/" target="_blank" rel="noopener">Chen Wang</a>, 
+            Josiah Wong, 
+            <a class="black_link" href="https://ai.stanford.edu/~zharu/" target="_blank" rel="noopener">Ruohan Zhang</a>,
+            Michael Lingelbach, 
+            Jiankai Sun, 
+            Mona Anvari, 
+            <strong><u>Minjune Hwang</u></strong>,
+            Manasi Sharma, 
+            Arman Aydin, 
+            Dhruva Bansal, 
+            Samuel Hunter, 
+            Kyu-Young Kim, 
+            Alan Lou, 
+            Caleb R Matthews, 
+            Ivan Villa-Renteria, 
+            Jerry Huayang Tang, 
+            Claire Tang, 
+            Fei Xia, 
+            Silvio Savarese, 
+            Hyowon Gweon, 
+            Karen Liu, 
+            <a class="black_link" href="https://jiajunwu.com/" target="_blank" rel="noopener">Jiajun Wu</a>, 
+            <a class="black_link" href="https://profiles.stanford.edu/fei-fei-li" target="_blank" rel="noopener">Li Fei-Fei</a> 
+            <br>
+            <em><strong>CoRL 2022</strong> <font color="red"><strong>(Best Paper Nomination; Oral)</strong></font></em>
+            <br>
+            <a href="https://arxiv.org/abs/2403.09227">arXiv</a> | 
+            <a href="https://behavior.stanford.edu/">project page</a> |
+            <a href="https://github.com/StanfordVL/BEHAVIOR-1K">github</a>
+            <p></p>
+            <p>
+            BEHAVIOR-1K is a benchmark for embodied AI and robotics research with realistic simulation of 1,000 diverse household activities grounded in human needs. 
+            As a core developer, I developed generalizable robot kinematic modules and controllers, as well as a foundational library of primitive skills for mobile manipulation.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Minority Reports Defense -->
+        <tr class="hidden">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/minority.png' width="160">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2004.13799">
+            <papertitle>Minority Reports Defense: Defending Against Adversarial Patches</papertitle>
+            </a>
+            <br>
+            <a class="black_link" href="https://www.linkedin.com/in/michael-mccoyd/" target="_blank" rel="noopener">Michael McCoyd</a>, 
+            Won Park, 
+            Steven Chen, 
+            Neil Shah, 
+            Ryan Roggenkemper, 
+            <strong><u>Minjune Hwang</u></strong>,
+            Jason Xinyu Liu, 
+            <a class="black_link" href="https://people.eecs.berkeley.edu/~daw/" target="_blank" rel="noopener">David Wagner</a>
+            <br>
+            <em><strong>ACNS 2020</strong></em> 
+            <br>
+            <em><a href="https://simla-workshop.github.io/Simla2020/">SiMLA</a> @ <strong>ACNS 2020</strong> <font color="red"><strong>(Best Paper Award)</strong></font></em> 
+            <br>
+            <a href="https://arxiv.org/abs/2004.13799">arXiv</a> | 
+            <a href="https://github.com/mmccoyd/areadefense">github</a>
+            <p></p>
+            <p>
+            We propose a defense against patch attacks based on partially occluding the image around each candidate patch location, so that a few occlusions each completely hide the patch.
+            I mainly developed the sparsity-invariant CNNs for adversarial attack detection via occlusion.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Minority Reports Defense -->
+        <tr class="hidden">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/aihadr1.png' width="160">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2011.13087">
+            <papertitle>Text Analytics for Resilience-Enabled Extreme Events Reconnaissance</papertitle>
+            </a>
+            <br>
+            Alicia Yi-Ting Tsai*,
+            Selim Gunay*,
+            <strong><u>Minjune Hwang</u>*</strong>,
+            Chenglong Li*,
+            Pengyuan Zhai*,
+            <a class="black_link" href="https://people.eecs.berkeley.edu/~elghaoui/" target="_blank" rel="noopener">Laurent El Ghaoui</a>,
+            Khalid M.Mosalam
+            <br>
+            <em><a href=https://www.hadr.ai/home>AI + HADR</a> @ <strong>NeurIPS 2020 </strong> <font color="red"><strong>(Spotlight)</strong></font></em> 
+            <br>
+            <a href="https://arxiv.org/abs/2011.13087">arXiv</a> | 
+            <a href="https://peer.berkeley.edu/news/peer-research-project-highlight-text-analytics-social-media-resilience-enabled-extreme-events">project page</a> |
+            <a href="https://github.com/alicia-tsai/TAR-toolkits">github</a>
+            <p></p>
+            <p>
+            We develop a text analytics framework to extract information from social media data for disaster response. 
+            I mainly designed the text analytics framework which used sparse convex optimization and NLP methods.
+            </p>
+          </td>
+        </tr>
+
+      </tbody></table>
+    </div>
+
+
+    <!-- This <i> tag was for some reason necessary for the publication list switch to work -->
+    <!-- <i> -->
+
+    <!-- Teaching -->
+    <a name="t"></a>
+    <div style="width:100%; text-align:left; margin-top:20;">
+      <heading>Teaching</heading> <br>
+    </div>
+    <div style="width:100%; text-align:left; margin-top:10;">
+      <li><strong>Graduate Teaching Assistant</strong>: <a href="http://cs231n.stanford.edu/">Stanford CS 231N</a> [2023], Deep Learning for Computer Vision </li>
+      <li><strong>Reader</strong> (Undergraduate Teaching Assistant): <a href="https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/">UC Berkeley EE 227BT</a> [2020], Convex Optimization </li>
+      <li><strong>Course Instructor</strong>: Ecole Bilingue de Berkeley [2019], Robotics & Programming  (with Prof. Alex Bayen) </li>
+      <li><strong>Undergraduate Lab Assistant</strong>: <a href="https://inst.eecs.berkeley.edu/~cs61a/sp18/">UC Berkeley CS 61A</a> [2018],  Structure and Interpretation of Computer Programs </li>
+    </div>
+
+    <!-- Industry Experience -->
+    <a name="t"></a>
+    <div style="width:100%; text-align:left; margin-top:20;">
+      <heading>Industry Experience</heading> <br>
+    </div>
+    <div style="width:100%; text-align:left; margin-top:10;">
+      <li><strong>Applied Scientist Intern</strong>, <a href="https://amazon.jobs/en/teams/amazon-robotics/">Amazon Robotics</a></li>
+      <li><strong>Research Intern</strong>, <a href="https://www.microsoft.com/en-us/research/">Microsoft</a></li>
+      <li><strong>Software Engineering Intern (Motion & Trajectory Planning)</strong>, <a href="https://apple.com/">Apple</a> (SPG)</li>
+    </div>
+
+    <!-- Honors & Fellowship -->
+    <a name="t"></a>
+    <div style="width:100%; text-align:left; margin-top:20;">
+      <heading>Honors & Fellowship</heading> <br>
+    </div>
+    <div style="width:100%; text-align:left; margin-top:10;">
+      <li><strong>Viterbi School of Engineering Fellowship</strong> Aug. 2024 - Jul. 2026
+      <li><strong>High Distinction in General Scholarship (Magna Cum Laude)</strong> May. 2021
+      <li><strong>Summer Undergraduate Research Fellowship (SURF), UC Berkeley</strong> May. 2020
+      <li><strong>Berkeley Undergraduate Scholarship</strong> Aug. 2017 - May. 2021
+    </div>
+
+    <!-- Service -->
+    <a name="s"></a>
+    <div style="width:100%; text-align:left; margin-top:20;">
+      <heading>Service</heading> <br>
+    </div>
+    <div style="width:100%; text-align:left; margin-top:10;">
+      <li><strong>Serving/Served as a reviewer</strong> for CoRL & IROS, as well as workshops in RSS.</li>
+      <li><strong>Serving as a PhD mentor</strong> for a number of undegraduate students and summer interns at USC</li>.
+    </div>
+
+    <div style="width:100%; text-align:left; margin-top:20; display:none">
+      <heading>Others </heading>
+    </div>
+    <div style="max-width:900; width:100%; margin:0 auto; display:none">
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <p align="center">
+            <a href="#top"><strong>Home</strong></a>&nbsp&nbsp/&nbsp
+            <!-- <a href=/projects><strong>Projects</strong></a>&nbsp&nbsp/&nbsp  -->
+            <a href=/posts><strong>Posts</strong></a>
+            <!-- <a><strong>Personal (Comming Soon)</strong></a> -->
+          </p>
+        </tr>
+      </table>
+    </div>
+
+    <span style="display:none">
+      <details>
+        <summary>
+          Pageviews
+        </summary>
+        <script type="text/javascript" id="clustrmaps"
+          src="//cdn.clustrmaps.com/map_v2.js?cl=5ee2ff&w=400&t=tt&d=5De8UX9TDFsVQrQw4cE3CBhNblYyl2vQbk42qsTB9Fw&co=ffffff&cmo=d99cff&cmn=ffa3b9&ct=808080"></script>
+      </details>
+    </span>
+
+    <br>
+    <hr>
+    <div style="margin:auto">
+      <center>
+        Inspired by <a href="https://jonbarron.info/">this</strong></a> and <a
+          href="https://www.jessezhang.net/">this</strong></a>.
+      </center>
+    </div>
+  </div>
+</body>
+
+</html>
