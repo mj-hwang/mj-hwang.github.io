@@ -86,14 +86,14 @@
         </p>
         <p>
           <p>
-          Hello! I am a first year PhD Student at USC, where I am advised by <a href="https://danielseita.github.io/" target="_blank" rel="noopener">Prof. Daniel Seita</a> and closely working with <a href="https://ebiyik.github.io/" target="_blank" rel="noopener">Prof. Erdem Biyik</a>. 
+          Hello! I am a second year PhD Student at USC, where I am advised by <a href="https://danielseita.github.io/" target="_blank" rel="noopener">Prof. Daniel Seita</a> and closely working with <a href="https://ebiyik.github.io/" target="_blank" rel="noopener">Prof. Erdem B&#305y&#305k</a>. 
           </p>
           <p>
           I received a MSCS degree at Stanford, where I worked on robot learning research with <a href="https://profiles.stanford.edu/fei-fei-li"  target="_blank" rel="noopener">Prof. Fei-Fei Li</a> and <a href="https://jiajunwu.com/" target="_blank" rel="noopener">Prof. Jiajun Wu</a>.
           Prior to that I completed my undergraduate studies at UC Berkeley, majoring in CS & Statistics. 
           </p>
           <p>
-            Previously, I was an Applied Scientist Intern at <a href="https://amazon.jobs/content/en/teams/ftr/amazon-robotics">Amazon Robotics</a>'s Scanless Tech, where I developed an efficient algorithm that eliminates the need for explicit scanning, with <a href="https://www.frank.preiswerk.com/" target="_blank" rel="noopener">Dr. Frank Preiswerk</a> and Preethi Krishnaswamy.
+            Previously, I was an Applied Scientist Intern at <a href="https://amazon.jobs/content/en/teams/ftr/amazon-robotics">Amazon Robotics</a>'s Scanless Tech, where I developed an efficient algorithm that eliminates the need for explicit scanning, with <a href="https://www.frank.preiswerk.com/" target="_blank" rel="noopener">Dr. Frank Preiswerk</a>.
             I have also interned in <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> and <a href="https://apple.com/">Apple</a> (SPG) to solve various problems in robotics.
           </p>
         </p>
@@ -143,22 +143,29 @@
       <a style="font-size: 17px; color: black;">(</a><a href="javascript:pubs_on()" id="all_pub_button" style="font-size:17px">All</a>
       <a style="font-size: 17px; color: black;"> / </a>
       <a href="javascript:pubs_off()" id="sel_pub_button" style="font-size:17px">Highlighted</a><a style="font-size: 17px; color: black;">)</a>
-      <br>
-      (* indicates equal contribution, <sup><span>&#8224;</span></sup> indicates equal advising)
-      <p>
+      <div style="margin-top:2px; font-size:13px;">
+        (* indicates equal contribution, <sup><span>&#8224;</span></sup> indicates equal advising)
+      </div>
+      <p style="margin:6px 0;">
+        I am interested in developing algorithms that can empower robots that to learn from humans and help daily tasks. My research explores two key, interrelated directions:  
       </p>
-      I am interested in developing robotic systems that can learn from human feedback and interact with humans.
-      Specifically, my research focuses on desiging algorithms that can robustly and effectively reflect users' <emph>true</emph> preference and finetuning large pretrained policies with various kinds of human feedback to continuously adapt to their needs.
+      <ul style="margin:4px 0 8px 18px; padding:0;">
+        <li><strong>Learing from Human Feedback</strong>: Designing effective algorithms that can reflect a user's true preference and finetuning pretrained policies with various forms of feedback (e.g., demonstrations, preferences, etc) to continuously adapt to user needs.</li>
+        <li><strong>Data-Efficient Policy Learning</strong>: Developing methods to train robotic policies in low-data regimes to minimize human effort (e.g., data curation and augmentation) for robust and generalizable policy learning.</li>
+      </ul>
+      <p style="margin:6px 0;">
+        In doing so, I am interested in leveraging natural language. <strong>Language is a powerful medium</strong> for human-robot interaction, essential for clear specification, grounded human-in-the-loop learning, and distilling complex human knowledge into a transferable form.
+      </p>
     </div>
 
     <div style="width:100%; text-align:left; margin-top:10;">
-      <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <table style="width:100%;border:0px;border-spacing:0px 4px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <!-- ReCouPLe -->
         <tr bgcolor="#F3EEB5" class="selected">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/recouple.png' width="160">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/recouple.png' width="200">
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://hitl-robot-learning.github.io/pdfs/causally.pdf">
             <papertitle>Causally Robust Preference Learning with Reasons</papertitle>
             </a>
@@ -166,26 +173,59 @@
             <strong><u>Minjune Hwang</u></strong>, 
             Yigit Korkmaz,
             <a class="black_link" href="https://danielseita.github.io/" target="_blank" rel="noopener">Daniel Seita<sup><span>&#8224;</span></sup></a>,
-            <a class="black_link" href="https://ebiyik.github.io/" target="_blank" rel="noopener"></a>Erdem Biyik<sup><span>&#8224;</span></sup></a>
+            <a class="black_link" href="https://ebiyik.github.io/" target="_blank" rel="noopener"></a>Erdem B&#305y&#305k<sup><span>&#8224;</span></sup></a>
+            <br>
+            <em>Under Review</em>, 2025
             <br>
             <em><a href="https://hitl-robot-learning.github.io/">HiTL Workshop</a> @ <strong>RSS 2025</strong> <font color="red"><strong>(Oral)</strong></font></em>
             <br>
-            <a href="https://hitl-robot-learning.github.io/pdfs/causally.pdf">paper</a> | 
+            <!-- <a href="https://hitl-robot-learning.github.io/pdfs/causally.pdf">paper</a> |  -->
             <a href="data/posters/ReCouPLe_poster.pdf">poster</a>
             <p></p>
             <p>
             PbRL is widely used for shaping agent behavior to match a user's preference, yet its sparse binary feedback makes it vulnerable to causal confusion.
-            We introduce ReCouPLe, a lightweight framework that uses natural language rationales to clarify true causal signals behind preference and to improve generalization, by employing orthogonal decomposition.
+            We introduce <strong>ReCouPLe</strong>, a lightweight framework that uses natural language rationales to clarify true causal signals behind preference and to improve generalization, by employing orthogonal decomposition.
             </p>
           </td>
         </tr>
 
         <!-- B3D -->
         <tr class="hidden">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/tracking.gif' width="160">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/qdig.png' width="200">
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:10px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2209.08763">
+            <papertitle>Red-Teaming Vision-Language-Action Models via Quality Diversity Prompt Generation for Robust Robot Policies</papertitle>
+            </a>
+            <br>
+            Siddharth Srikanth, 
+            Freddie Liang, 
+            Ya-Chuan Hsu, 
+            Varun Bhatt, 
+            Shihan Zhao, 
+            Henry Chen, 
+            <strong><u>Minjune Hwang</u></strong>,
+            Akanksha Saran, 
+            <a class="black_link" href="https://danielseita.github.io/" target="_blank" rel="noopener">Daniel Seita</a>, 
+            Aaquib Tabrez, 
+            <a class="black_link" href="https://stefanosnikolaidis.net/" target="_blank" rel="noopener">Stefanos Nikolaidis</a>
+            <br>
+            <em>Under Review</em>, 2025
+            <br>
+            <p></p>
+            <p>
+            We present <strong>Q-DIG</strong>, a novel red-teaming framework for generating diverse task instructions that induce failures in SoTA Vision-Language-Action models using Quality Diversity. We then provide a methodology to leverage these failure modes to improve policies.
+            </p>
+          </td>
+        </tr>
+        
+        <!-- RedTeamVLA -->
+        <tr class="hidden">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/tracking.gif' width="200">
+          </td>
+          <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://arxiv.org/abs/2209.08763">
             <papertitle>Decentralized Vehicle Coordination: The Berkeley DeepDrive Drone Dataset and Consensus-Based Models</papertitle>
             </a>
@@ -197,8 +237,8 @@
             Jiawei Lu,
             Jiamu Zhang,
             Christopher Chou,
-            <a class="black_link" href="https://ebiyik.github.io/" target="_blank" rel="noopener">Trevor Darrell</a>,
-            <a class="black_link" href="https://ebiyik.github.io/" target="_blank" rel="noopener">Alexandre Bayen</a>
+            <a class="black_link" href="https://people.eecs.berkeley.edu/~trevor/" target="_blank" rel="noopener">Trevor Darrell</a>,
+            <a class="black_link" href="https://bayen.berkeley.edu/alex-bayen" target="_blank" rel="noopener">Alexandre Bayen</a>
             <br>
             <em><strong>ICRA 2025</strong></em>
             <br>
@@ -208,7 +248,7 @@
             <a href="https://github.com/b3d-project/b3d">code</a>
             <p></p>
             <p>
-            We introduce a novel traffic dataset and modeling framework tailored to study motion planning in understructured environments. 
+            We introduce Berkeley DeepDrive Drone (<strong>B3D</strong>) dataset, a novel traffic dataset and modeling framework tailored to study motion planning in understructured environments. 
             In this project, I was in charge of the object detection and tracking framework for constructing the dataset.
             </p>
           </td>
@@ -216,10 +256,10 @@
         
         <!-- NOIR -->
         <tr bgcolor="#F3EEB5" class="selected">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/noir.gif' width="160">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/noir.gif' width="200">
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://noir-corl.github.io/">
             <papertitle>NOIR: Neural Signal Operated Intelligent Robots for Everyday Activities</papertitle>
             </a>
@@ -247,7 +287,7 @@
             <a href="https://noir-corl.github.io/">project page</a>
             <p></p>
             <p>
-            NOIR is a general-purpose BRI system that enables humans to command robots to perform everyday activities with their brain signals. 
+            <strong>NOIR</strong> is a general-purpose BRI system that enables humans to command robots to perform everyday activities with their brain signals. 
             Here, I designed a hierarchical EEG decoding system with parameterized skills, as well as a few-shot imitation learning algorithm.
             </p>
           </td>
@@ -255,10 +295,10 @@
 
         <!-- SEED -->
         <tr bgcolor="#F3EEB5" class="selected">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/seed.gif' width="160">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/seed.gif' width="200">
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://seediros23.github.io/">
             <papertitle>Primitive Skill-Based Robot Learning from Human Evaluative Feedback</papertitle>
             </a>
@@ -278,7 +318,7 @@
             <a href="data/posters/SEED_poster.pdf">poster</a>
             <p></p>
             <p>
-            SEED is an RLHF algorithm that leverages primitive skills to enable more safe and sample efficient long-horizon task learning. 
+            We introduce <strong>SEED</strong>, an RLHF algorithm that leverages primitive skills to enable more safe and sample efficient long-horizon task learning. 
             I mainly designed the hierarchical RLHF algorithm and led simulation experiments.
             </p>
           </td>
@@ -286,10 +326,10 @@
 
         <!-- HRON -->
         <tr class="hidden">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/hron.png' width="160">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/hron.png' width="200">
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://arxiv.org/abs/2306.13760">
             <papertitle>Task-Driven Graph Attention for Hierarchical Relational Object Navigation</papertitle>
             </a>
@@ -318,10 +358,10 @@
 
         <!-- B1K -->
         <tr bgcolor="#F3EEB5" class="selected">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/behavior.gif' width="160">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/behavior.gif' width="200">
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://behavior.stanford.edu/">
             <papertitle>BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation</papertitle>
             </a>
@@ -370,10 +410,10 @@
 
         <!-- Minority Reports Defense -->
         <tr class="hidden">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/minority.png' width="160">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/minority.png' width="200">
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://arxiv.org/abs/2004.13799">
             <papertitle>Minority Reports Defense: Defending Against Adversarial Patches</papertitle>
             </a>
@@ -403,10 +443,10 @@
 
         <!-- Minority Reports Defense -->
         <tr class="hidden">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/aihadr1.png' width="160">
+          <td style="padding:10px;width:25%;vertical-align:middle">
+            <img src='images/aihadr1.png' width="200">
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:10px;width:75%;vertical-align:middle">
             <a href="https://arxiv.org/abs/2011.13087">
             <papertitle>Text Analytics for Resilience-Enabled Extreme Events Reconnaissance</papertitle>
             </a>
@@ -480,8 +520,10 @@
       <heading>Service</heading> <br>
     </div>
     <div style="width:100%; text-align:left; margin-top:10;">
-      <li><strong>Serving/Served as a reviewer</strong> for CoRL & IROS, as well as workshops in RSS.</li>
-      <li><strong>Serving as a PhD mentor</strong> for a number of undegraduate students and summer interns at USC</li>.
+      <li><strong>Serving/Served as a reviewer</strong> for CoRL, ICLR, ICRA, IROS, THRI, and workshops in RSS.</li>
+      <li><strong>Mentoring</strong> a number of undegraduate students and summer interns at USC.</li>
+      <li><strong>Organizing UROS</strong>, a student-run, cross-department robotics reading group and seminar series at USC.</li>
+      <li><strong>Serving as a PhD mentor</strong> for USC CS Undergraduate Mentoring Program.</li>
     </div>
 
     <div style="width:100%; text-align:left; margin-top:20; display:none">

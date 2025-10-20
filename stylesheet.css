@@ -105,7 +105,8 @@ span.highlight {
 }
 
 img {
-  border-radius: 15px;
+  border-radius: 5px;
+  border: 1.4px solid #000;
 }
 
 .table-like {
