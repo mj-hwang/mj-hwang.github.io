@@ -1,4 +1,5 @@
 /* Color scheme stolen from https://www.seas.upenn.edu/~oleh/ */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
 a {
   color: #1772d0;
   text-decoration: none;
@@ -31,10 +32,11 @@ th,
 tr,
 p,
 a {
-  font-family: 'Palatino Linotype', 'Palatino', 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Asap', roboto, sans-serif;
   /* font-family: 'Titillium Web', Verdana, Helvetica, sans-serif; */
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 15.5px;
+  line-height: 1.35;
+  /* font-weight: 400; */
   /* this fixes text size on mobile */
   /* text-size-adjust: 200%; */
   /* text-size-adjust: none; */
@@ -243,7 +245,7 @@ li {
 
 b {
   display: table-cell;
-  font-size: 14.5px;
+  font-size: 14x;
   padding-right: 0.5em;
 }
 
